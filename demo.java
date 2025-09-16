@@ -1,15 +1,23 @@
 import java.util.Scanner;
 public class demo {
-    int apple_price;
-    int apple_count ;
-   
-    void total_money(int apple_price,int apple_count){
-        int total = apple_price*apple_count;
-        System.out.println(total);
+    void sum(int a,int b){
+        System.out.println(a+b);
+    }
+    void sub(int a, int b){
+        System.out.println(a-b);
+    }
+    void mul(int a , int b){
+        System.out.println(a*b);
+    }
+    void div(int a ,int b){
+        System.out.println(a/b);
     }
     public static void main(String args[]) {
        demo d1 = new demo();
-       d1.total_money(3,9);
+       d1.sum(34,76);
+       d1.sub(98,43);
+       d1.mul(54,98);
+       d1.div(45,3);
         }
     }
 
