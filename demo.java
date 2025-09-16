@@ -4,17 +4,11 @@ public class demo {
         Scanner scan = new Scanner(System.in);
        int Salary = scan.nextInt();
        int age = scan.nextInt();  
-       if (Salary>=20000&& age <= 25){
-        int loan = scan.nextInt();
-        if (loan<=50000){
-            System.out.println("you are eligible for loan");
-        }
-        else {
-            System.out.println("maximum loan amount is 50000");
-        }
+       if (Salary>=20000&& age <= 25? true : false){
+           System.out.println("eligible for loan");
        }
        else {
-        System.out.println("not eligible for loan");
-       }  
+        System.out.println("you are not eligible for loan");
+       }
     }
 }
