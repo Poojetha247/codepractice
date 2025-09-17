@@ -1,23 +1,31 @@
 import java.util.Scanner;
 public class demo {
-    void sum(int a,int b){
-        System.out.println(a+b);
+    int sum(int a,int b){
+        return a+b;
     }
-    void sub(int a, int b){
-        System.out.println(a-b);
+    int sub(int a, int b){
+        return a-b;
     }
-    void mul(int a , int b){
-        System.out.println(a*b);
+    int mul(int a , int b){
+        return a*b;
     }
-    void div(int a ,int b){
-        System.out.println(a/b);
+    int div(int a ,int b){
+        return a/b;
+    }
+    void add (){
+        System.out.println("lorem ipsum");
     }
     public static void main(String args[]) {
        demo d1 = new demo();
-       d1.sum(34,76);
-       d1.sub(98,43);
-       d1.mul(54,98);
-       d1.div(45,3);
+       int addition = d1.sum(34,76);
+       int subtraction = d1.sub(98,43);
+       int multiply = d1.mul(54,98);
+       int division = d1.div(45,3);
+       System.out.println(addition);
+       System.out.println(subtraction);
+       System.out.println(multiply);
+       System.out.println(division);
+       d1.add();
         }
     }
 
