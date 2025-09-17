@@ -1,3 +1,11 @@
+import java.util.Scanner;
+class a{
+	private int age = 19;
+	void age() {
+		System.out.println(age);
+	}
+}
+
 public class Demo {
 	public int age = 19;
     public static void main(String args[]) {
@@ -5,3 +13,4 @@ public class Demo {
     	System.out.println(d1.age);
        }
     }
+
