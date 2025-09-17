@@ -1,6 +1,6 @@
 import java.util.Scanner;
 class a{
-	private int age = 19;
+	protected int age = 19;
 	void age() {
 		System.out.println(age);
 	}
