@@ -1,13 +1,21 @@
-public class Demo  {
+import java.util.Scanner;
+class a {
+	final void section() {
+		System.out.println("section a");
+	}
+}
+class b extends a{
+	
+}
+ 
+public class demo  {
 	
 	
     public static void main(String args[]) {
-    	final int age = 19;
-    	System.out.println(age);
+    	b b1 = new b();
+    	b1.section();
     	
        }
     }
-
-
 
 
