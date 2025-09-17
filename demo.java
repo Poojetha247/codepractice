@@ -1,46 +1,36 @@
 
-class vehicle{
-	String brand ;
-	int year;
-	void startengine(){
-		System.out.println("engine is stared");
+import java.util.Scanner;
+class animal{
+	
+	int age = 12;
+	animal(String name){
+		System.out.println(name);
+	}
+	void makesound() {
+		System.out.println("Animal makes sound");
 	}
 }
-class car extends vehicle{
-	String feild_type ;
-	void startengine() {
-		System.out.println("car engine started");
+class dog extends animal{
+	dog(){
+		super ("monkey");
+		super.makesound();
+		System.out.println("dog");
+		System.out.println(super.age);
 	}
-    void drive() {
-    	System.out.println("car is driving");
-    }
 }
-
-class truck extends vehicle{
-    int loadcapacity ;
-    void startenging() {
-    	System.out.println("truck engine started");
-    }
-    void haul() {
-    	System.out.println("truck is hauling");
-    }
+class cat extends animal{
+	cat(){
+	super ("rabbit");
+	super.makesound();
+	System.out.println("cat");
+	System.out.println(super.age);
+	}
 }
 public class Demo {
 	
     public static void main(String args[]) {
-    	truck t1 = new truck ();
-    	car c1 = new car ();
-    	t1.startengine();
-    	t1.haul();
-    	c1.startengine();
-    	c1.drive();
-    	
-    	System.out.println(t1.brand= "werr");
-    	System.out.println(t1.year =23);
-    	System.out.println(t1.loadcapacity =345);
-    	System.out.println(c1.brand = "xyz");
-    	System.out.println(c1.year = 34);
-    	System.out.println(c1.feild_type ="fef");
+    	dog d1 = new dog ();
+    	cat c1 = new cat ();
     	
        }
     }
