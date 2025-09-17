@@ -10,11 +10,11 @@ class student extends Teacher {
 public class Demo  {
 	
     public static void main(String args[]) {
-    	student s1 = new student();
+    	
     	Teacher.totallesson = 5;
-    	student s2 = new student ();
+    	
     	Teacher.totallesson = 10;
-    	System.out.println(s1.totallesson);
+    	System.out.println(Teacher.totallesson);
        }
     }
 
