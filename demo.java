@@ -1,21 +1,7 @@
-import java.util.Scanner;
-abstract class vehicle {
-	abstract void speed () ;
-	void brand() {
-		System.out.println("wert");
-	}
-}
-class bike extends vehicle{
-	void speed() {
-		System.out.println("1233");
-	}
-}
 public class Demo {
-	
+	public int age = 19;
     public static void main(String args[]) {
-    	bike b1 = new bike();
-    	b1.speed();
-    	b1.brand();
+    	Demo d1 = new Demo();
+    	System.out.println(d1.age);
        }
     }
-
