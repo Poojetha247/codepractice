@@ -1,24 +1,21 @@
 import java.util.Scanner;
-class person{
-	String name;
-	person(String name){
-		this.name = name;
-		System.out.println(name);
-	}
-	
-}
-class employee extends person{
-	int employeid ;
-	employee(){
-		super("john");
+abstract class vehicle {
+	abstract void speed () ;
+	void brand() {
+		System.out.println("wert");
 	}
 }
-
+class bike extends vehicle{
+	void speed() {
+		System.out.println("1233");
+	}
+}
 public class Demo {
 	
     public static void main(String args[]) {
-    	employee e1 = new employee();
-    	
+    	bike b1 = new bike();
+    	b1.speed();
+    	b1.brand();
        }
     }
 
