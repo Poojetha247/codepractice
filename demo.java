@@ -8,17 +8,17 @@ class Demo{
             return;
         }
         int c=2;
-        
-        while(c*c<=num){
+        int i=0;
+        while(Math.sqrt(c)<=num){
             if (num%c==0){
                 System.out.println("Not a prime number");
-               
+                i=1;
                 break;
             }
             c++;
-            System.out.println("Prime number");
+            
         }
-        
-        
+        if(i==0)
+        System.out.println("Prime number");
     }
 }
