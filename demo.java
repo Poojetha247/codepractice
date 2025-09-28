@@ -1,24 +1,11 @@
 import java.util.Scanner;
 class Demo{
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int num =scan.nextInt();
-        if (num<=1){
-            System.out.println("Not a prime ");
-            return;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the celcius:");
+        float tempC = scanner.nextFloat();
+        float tempF = (tempC *9/5)+32;
+        System.out.println(tempF);
+        
         }
-        int c=2;
-        int i=0;
-        while(Math.sqrt(c)<=num){
-            if (num%c==0){
-                System.out.println("Not a prime number");
-                i=1;
-                break;
-            }
-            c++;
-            
-        }
-        if(i==0)
-        System.out.println("Prime number");
-    }
 }
