@@ -5,15 +5,14 @@ public class Demo {
     public static void main(String args[]) {
 		Scanner scan = new Scanner (System.in);
 		int n = scan.nextInt();
-		int a =0;
-		int b = 1;
-		int count = 2;
-		while (count <= n) {
-			int temp = b;
-			b= b+a;
-			a= temp;
-			count ++;
+		int count = 0;
+		while(n>0) {
+			int rem = n%10;
+			if (rem == 5) {
+				count ++;
+			}
+			n = n/10;
 		}
-        System.out.println(b);
-    }
+		System.out.println(count);
+		    }
     }
