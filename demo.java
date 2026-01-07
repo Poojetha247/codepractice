@@ -4,24 +4,17 @@ public class Demo {
 
     public static void main(String args[]) {
 		Scanner scan = new Scanner (System.in);
-		int ans = 0;
-		while (true) {
-			System.out.println("Enter the operator:");
-			char op = scan.next().trim().charAt(0);
-			if (op == '+'|| op == '-'|| op == '*'|| op == '/'|| op == '%') {
-				System.out.println("Enter the two numbers:");
-				int num1 = scan.nextInt();
-				int num2 = scan.nextInt();
-				
-				
+		int[][] arr = new int[3][3];
+		for (int row=0;row<arr.length;row++) {
+			for(int col=0;col<arr[row].length;col++) {
+				arr[row][col]=scan.nextInt();
 			}
-			else if(op == 'x'|| op == 'X') {
-				break;
+		}
+		for (int row=0;row<arr.length;row++) {
+			for(int col=0; col< arr[row].length;col++) {
+				System.out.print(arr[row][col]+"");
 			}
-			else {
-				System.out.println("Invalid Operator");
-			}
-			System.out.println(ans);
+			System.out.println();
 		}
 		    }
     }
