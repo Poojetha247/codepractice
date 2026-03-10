@@ -1,18 +1,10 @@
+import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.Arrays;
-
-public class Demo {
-
-    public static void main(String args[]) {
-		Scanner scan = new Scanner (System.in);
-		int[][] arr = new int[3][3];
-		for (int row=0;row<arr.length;row++) {
-			for(int col=0;col<arr[row].length;col++) {
-				arr[row][col]=scan.nextInt();
-			}
-		}
-		for (int[]a : arr) {
-			System.out.println(Arrays.toString(a));
-		}
-		    }
-    }
+public class Demo{
+	public static void main(String[]args){
+		ArrayList<Integer>list = new ArrayList <>(10);
+	    list.add(234);
+	    list.add(56);
+		System.out.println(list);
+	}
+}
