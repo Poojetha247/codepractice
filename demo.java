@@ -1,19 +1,17 @@
-import java.util.ArrayList;
+
+import java.util.*;
 import java.util.Scanner;
 public class Demo{
 	public static void main(String[]args){
-		Scanner scan = new Scanner(System.in);
-		ArrayList<ArrayList<Integer>>list = new ArrayList <>(10);
-		for (int i= 0 ;i<10;i++){
-			list.add(new ArrayList<>());
-		}
-		for (int i = 0;i<10;i++){
-			for(int j= 0 ;j<10;j++){
-				list.get(i).add(scan.nextInt());
-			}
-		}
-		System.out.println(list);
-	    
+	int[] arr = {1,2,3,4,5};
+	swap(arr,2,0);
+	System.out.println(Arrays.toString(arr));
+	}
+	static void swap(int [] arr,int index1, int index2){
+		int temp = arr[index1];
+		arr[index1] = arr[index2];
+		arr[index2] =temp;
+		
 	}
 }
  
