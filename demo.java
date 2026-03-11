@@ -5,7 +5,7 @@ public class Demo{
 	public static void main(String[]args){
 	int[] arr = {1,2,3,4,5};
 	
-	System.out.println(max(arr););
+	System.out.println(max(arr));
 	}
 	static int max(int [] arr){
 		int max =0;
