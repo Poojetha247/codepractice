@@ -4,19 +4,20 @@ import java.util.Scanner;
 public class Demo{
 	public static void main(String[]args){
 	int[] arr = {1,334,56,27,47,89,90};
-	reverse(arr);
-	System.out.println(Arrays.toString(arr));
+	int target = 27;
+	int ans = linearSearch(arr , target);
+	System.out.println(ans);
 	}
-	static void reverse(int [] arr ){
-		int start= 0;
-		int end = arr.length-1;
-	    while (start<end){
-			int temp = arr[start];
-			arr[start]= arr[end];
-			arr[end]= temp;
-			start++;
-			end--;
+	static int linearSearch(int [] arr ,int target){
+		if (arr.length ==0){
+			return -1;
 		}
+		for (int i = 0;i <arr.length;i++){
+			if(arr[i] == target){
+				return i;
+			}
+		}
+		return -1;
 	}
 }
  
