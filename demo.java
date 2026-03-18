@@ -12,9 +12,9 @@ public class Demo{
 		if(str.length() == 0){
 			return -1;
 		}
-		for (int i =0; i<str.length();i++)	{
-			if (target == str.charAt(i)){
-				return i;
+		for (int letter :str.charAt[i])	{
+			if (target == letter){
+				return letter;
 			}
 		}
 	return-1;}
