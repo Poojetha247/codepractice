@@ -12,9 +12,9 @@ public class Demo{
 		if (arr.length ==0){
 			return -1;
 		}
-		for (int i = 0;i <arr.length;i++){
-			if(arr[i] == target){
-				return i;
+		for (int element : arr){
+			if(element == target){
+				return element;
 			}
 		}
 		return -1;
