@@ -5,18 +5,20 @@ public class Demo{
 	public static void main(String[]args){
 	String  arr = "poojetha";
 	char target = 'e';
-	int ans = linearSearch(arr , target);
+	boolean ans = linearSearch(arr , target);
 	System.out.println(ans);
 	}
-	static int linearSearch(String str, char target){
+	static boolean linearSearch(String str, char target){
 		if(str.length() == 0){
-			return -1;
+			return false;
 		}
-		for (int letter :str.charAt[i])	{
+		for (char letter : str.toCharArray())	{
 			if (target == letter){
-				return letter;
+				return true;
 			}
 		}
-	return-1;}
+	return false;
+        
+	}
 }
  
