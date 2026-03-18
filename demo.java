@@ -3,21 +3,20 @@ import java.util.*;
 import java.util.Scanner;
 public class Demo{
 	public static void main(String[]args){
-	int[] arr = {1,334,56,27,47,89,90};
-	int target = 27;
+	String  arr = "poojetha";
+	char target = 'e';
 	int ans = linearSearch(arr , target);
 	System.out.println(ans);
 	}
-	static int linearSearch(int [] arr ,int target){
-		if (arr.length ==0){
+	static int linearSearch(String str, char target){
+		if(str.length() == 0){
 			return -1;
 		}
-		for (int element : arr){
-			if(element == target){
-				return element;
+		for (int i =0; i<str.length();i++)	{
+			if (target == str.charAt(i)){
+				return i;
 			}
 		}
-		return -1;
-	}
+	return-1;}
 }
  
