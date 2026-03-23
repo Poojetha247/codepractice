@@ -3,13 +3,14 @@ import java.util.*;
 import java.util.Scanner;
 public class Demo{
 	public static void main(String[]args){
-	int[] num = {2,4,3,56,78,546};
-	int max =Integer.MIN_VALUE;
-	for(int x :num){
-		 max = Math.max(max,x);
+	int  num = 3487;
+	int rev = 0;
+	while(num>0){
+		rev = rev *10+num%10;
+		num /= 10;
 	}
-     System.out.println(max);
-	
+	System.out.println(rev);
+
 	}
 }
  
