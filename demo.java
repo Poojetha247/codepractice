@@ -3,14 +3,9 @@ import java.util.*;
 import java.util.Scanner;
 public class Demo{
 	public static void main(String[]args){
-	int  num = 3487;
-	int rev = 0;
-	while(num>0){
-		rev = rev *10+num%10;
-		num /= 10;
-	}
-	System.out.println(rev);
-
+	String s="Hello to infosys";
+	String[] part = s.trim().split(" +");
+	System.out.println(part.length);
 	}
 }
  
