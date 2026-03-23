@@ -3,16 +3,15 @@ import java.util.*;
 import java.util.Scanner;
 public class Demo{
 	public static void main(String[]args){
-	int a = 0;
-	int b = 1;
-	int n = 6;
-	System .out.print (a +" "+b);
-	for (int i = 3;i <= n;i++){
-		int c = a+b;
-		System.out.print(" " + c);
-	    a=b;
-		b=c;
+	String s = "HeLLoWwORlD";
+	int count =0;
+	for(int c: s.toCharArray()){
+		if(Character.isUpperCase(c)){
+			count++;
 		}
+
+	}
+	System.out.println(count);
 	}
 }
  
