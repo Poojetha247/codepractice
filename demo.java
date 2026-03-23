@@ -3,14 +3,13 @@ import java.util.*;
 import java.util.Scanner;
 public class Demo{
 	public static void main(String[]args){
-	String name = "poojetha";
-	int count = 0;
-	for(char c : name.toCharArray()){
-		if("aeiou".indexOf(c) != -1){
-			count++;
-		}
+	int n = 34567;
+	int sum = 0;
+	while(n>0){
+		sum+=n%10;
+		n= n/10;
 	}
-	System.out.println(count);
+	System.out.println(sum);
 	}
 }
  
