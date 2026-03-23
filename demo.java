@@ -3,13 +3,14 @@ import java.util.*;
 import java.util.Scanner;
 public class Demo{
 	public static void main(String[]args){
-	int n = 34567;
-	int sum = 0;
-	while(n>0){
-		sum+=n%10;
-		n= n/10;
+	int [] num = {2,4,3,56,78,546};
+	int count =0;
+	for(int x: num){
+		if(x%2==0){
+           count++;
+		}
 	}
-	System.out.println(sum);
+	System.out.println(count);
 	}
 }
  
