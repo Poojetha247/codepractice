@@ -3,12 +3,16 @@ import java.util.*;
 import java.util.Scanner;
 public class Demo{
 	public static void main(String[]args){
-	int [] num  = {1,2,3};
-	int product = 1;
-	for(int x: num) {
-		product *= x;
-	}
-	System.out.println(product);
+	int a = 0;
+	int b = 1;
+	int n = 6;
+	System .out.print (a +" "+b);
+	for (int i = 3;i <= n;i++){
+		int c = a+b;
+		System.out.print(" " + c);
+	    a=b;
+		b=c;
+		}
 	}
 }
  
